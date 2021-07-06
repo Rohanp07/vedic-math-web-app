@@ -5,7 +5,7 @@ const AboutComponent = () => {
         <div>
             
             <h1>
-                About page
+               About page
             </h1>
            
         </div>

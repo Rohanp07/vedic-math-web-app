@@ -4,7 +4,7 @@ const HomeComponent = () => {
     return (
         <div>
             <h1>
-                Home page
+               Home page
             </h1>
            
         </div>
