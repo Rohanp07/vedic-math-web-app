@@ -1,8 +1,18 @@
 import React from 'react'
+import { useState } from 'react';
 import Card from 'react-bootstrap/Card';
 import CardDeck from 'react-bootstrap/CardDeck'
 import Button from 'react-bootstrap/Button';
+import CardComponent from './CardComponent';
 const HomeComponent = () => {
+
+    const [operations,setOperation]=useState([
+        {opr:"Addition"},
+        {opr:"Subtraction"},
+        {opr:"Division"},
+        {opr:"Multiplication"}
+    ]);
+
     return (
         <div className="ninja">
              <h2>What do we offer?</h2>
@@ -16,60 +26,11 @@ const HomeComponent = () => {
              <br></br>
              <br></br>
              <div class="container">
-                    <CardDeck>
-                    <Card style={{ backgroundColor: 'gray' }}>
-                    <Card.Body>
-                        <Card.Title>Addition</Card.Title>
-                        <Card.Text>
-                        This is a wider card with supporting text below as a natural lead-in to
-                        additional content. This card has even longer content than the first to
-                        show that equal height action.
-                        </Card.Text>
-                    </Card.Body>
-                    <Card.Footer>
-                    <Button variant="primary">Start Learning</Button>
-                    </Card.Footer>
-                    </Card>
-                    <Card>
-                    <Card.Body>
-                        <Card.Title>Subtraction</Card.Title>
-                        <Card.Text>
-                        This is a wider card with supporting text below as a natural lead-in to
-                        additional content. This card has even longer content than the first to
-                        show that equal height action.
-                        </Card.Text>
-                    </Card.Body>
-                    <Card.Footer>
-                    <Button variant="primary">Start Learning</Button>
-                    </Card.Footer>
-                    </Card>
-                    <Card>
-                    <Card.Body>
-                        <Card.Title>Multiplication</Card.Title>
-                        <Card.Text>
-                        This is a wider card with supporting text below as a natural lead-in to
-                        additional content. This card has even longer content than the first to
-                        show that equal height action.
-                        </Card.Text>
-                    </Card.Body>
-                    <Card.Footer>
-                    <Button variant="primary">Start Learning</Button>
-                    </Card.Footer>
-                    </Card>
-                    <Card>
-                    <Card.Body>
-                        <Card.Title>Division</Card.Title>
-                        <Card.Text>
-                        This is a wider card with supporting text below as a natural lead-in to
-                        additional content. This card has even longer content than the first to
-                        show that equal height action.
-                        </Card.Text>
-                    </Card.Body>
-                    <Card.Footer>
-                    <Button variant="primary">Start Learning</Button>
-                    </Card.Footer>
-                    </Card>
-                </CardDeck>
+            <CardDeck>
+                {operations.map(operations => 
+                    <CardComponent operations={operations} />
+                )}
+            </CardDeck>
           </div>
         </div>
     )
