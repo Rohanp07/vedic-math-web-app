@@ -4,13 +4,11 @@ import { Card,Button } from "react-bootstrap";
 const CardComponent = (props) => {
   return (
     
-      <Card>
+      <Card style={{ backgroundColor: '#DCE4DD' }}>
         <Card.Body>
           <Card.Title>{props.operations.opr}</Card.Title>
           <Card.Text>
-            This is a wider card with supporting text below as a natural lead-in
-            to additional content. This card has even longer content than the
-            first to show that equal height action.
+          Here you can learn about different <strong>{props.operations.opr}</strong> techniques which would allow you to do calculations at a faster rate
           </Card.Text>
         </Card.Body>
 
