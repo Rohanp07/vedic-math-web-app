@@ -17,52 +17,44 @@ const HomeComponent = () => {
              <br></br>
              <div class="container">
                     <CardDeck>
-                    <Card style={{ backgroundColor: 'gray' }}>
+                    <Card style={{ backgroundColor: '#DCE4DD' }}>
                     <Card.Body>
                         <Card.Title>Addition</Card.Title>
                         <Card.Text>
-                        This is a wider card with supporting text below as a natural lead-in to
-                        additional content. This card has even longer content than the first to
-                        show that equal height action.
+                            Here you can learn about different <strong>addition</strong> techniques which would allow you to do calculations at a faster rate
                         </Card.Text>
                     </Card.Body>
                     <Card.Footer>
                     <Button variant="primary">Start Learning</Button>
                     </Card.Footer>
                     </Card>
-                    <Card>
+                    <Card style={{ backgroundColor: '#DCE4DD' }}>
                     <Card.Body>
                         <Card.Title>Subtraction</Card.Title>
                         <Card.Text>
-                        This is a wider card with supporting text below as a natural lead-in to
-                        additional content. This card has even longer content than the first to
-                        show that equal height action.
+                        Here you can learn about different <strong>subtraction</strong> techniques which would allow you to do calculations at a faster rate
                         </Card.Text>
                     </Card.Body>
                     <Card.Footer>
                     <Button variant="primary">Start Learning</Button>
                     </Card.Footer>
                     </Card>
-                    <Card>
+                    <Card style={{ backgroundColor: '#DCE4DD' }}>
                     <Card.Body>
                         <Card.Title>Multiplication</Card.Title>
                         <Card.Text>
-                        This is a wider card with supporting text below as a natural lead-in to
-                        additional content. This card has even longer content than the first to
-                        show that equal height action.
+                        Here you can learn about different <strong>multiplication</strong> techniques which would allow you to do calculations at a faster rate
                         </Card.Text>
                     </Card.Body>
                     <Card.Footer>
                     <Button variant="primary">Start Learning</Button>
                     </Card.Footer>
                     </Card>
-                    <Card>
+                    <Card style={{ backgroundColor: '#DCE4DD' }}>
                     <Card.Body>
                         <Card.Title>Division</Card.Title>
                         <Card.Text>
-                        This is a wider card with supporting text below as a natural lead-in to
-                        additional content. This card has even longer content than the first to
-                        show that equal height action.
+                        Here you can learn about different <strong>division</strong> techniques which would allow you to do calculations at a faster rate
                         </Card.Text>
                     </Card.Body>
                     <Card.Footer>
