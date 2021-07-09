@@ -21,7 +21,6 @@ function App() {
                 <Route path="/about">
                   <AboutComponent />
                 </Route>
-
             </Switch>
             
       

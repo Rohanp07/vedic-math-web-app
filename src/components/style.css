@@ -1,0 +1,15 @@
+.k:hover {
+  /* border-radius: 0px !important; */
+  box-shadow: 5px 10px;
+  transition: 0.3s ease-in;
+  transform: scale(1.1);
+}
+
+.bu:hover {
+  background-color: black;
+  transform: scale(1.1);
+}
+
+.h {
+  font-size: 50px;
+}
