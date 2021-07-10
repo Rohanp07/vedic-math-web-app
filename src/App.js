@@ -22,6 +22,7 @@ function App() {
                 <Route path="/about">
                   <AboutComponent />
                 </Route>
+
                 <Route path="/learn">
                   <Learning/>
                 </Route>

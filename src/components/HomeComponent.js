@@ -1,11 +1,17 @@
 import React from 'react'
 import { useState } from 'react';
+import Card from 'react-bootstrap/Card';
 import CardDeck from 'react-bootstrap/CardDeck'
+import Button from 'react-bootstrap/Button';
 import CardComponent from './CardComponent';
-import Image from '../assets/images/math_img.jpg';
+import Image from 'C:\\Users\\acer\\Desktop\\Golu\\vedic-math-web-app\\src\\hj3.jpg';
 import Jumbotron from 'react-bootstrap/Jumbotron';
 import Container from 'react-bootstrap/Container';
-import "./style/homepage.css"
+import './style.css';
+import TypeWriterEffect from 'react-typewriter-effect';
+// script.src="https://unpkg.com/typewriter-effect@latest/dist/core.js";
+// import Typewriter from 'typewriter-effect/dist/core';
+
 
 
 const HomeComponent = () => {
@@ -21,6 +27,7 @@ const HomeComponent = () => {
         <div>
             <Jumbotron fluid>
                 <Container className='first'>
+
                     <div style={{ display:'flex',alignItems:'flex-start',marginLeft:'50px'}}>
                         <div style={{ display:'flex',flexDirection:'column' }}>
                             <p style={{ display:'inline-block',width:'80%',marginRight:'10px'}}>
@@ -37,6 +44,7 @@ const HomeComponent = () => {
              <hr></hr>
              <br></br>
              <br></br>
+
              <div class="container">
                 <CardDeck>
                     {operations.map(operations => 
