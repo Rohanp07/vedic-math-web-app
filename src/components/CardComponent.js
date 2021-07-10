@@ -1,10 +1,17 @@
 import React from "react";
 import { Card,Button } from "react-bootstrap";
+import './style.css'
+import { LinkContainer } from "react-router-bootstrap";
+import { useHistory } from 'react-router-dom';
 
 const CardComponent = (props) => {
+  
+  const history = useHistory();
+  const handleClick = () => history.push('/learn');
   return (
+
     
-      <Card style={{ backgroundColor: '#DCE4DD' }}>
+      <Card style={{ backgroundColor: '#DCE4DD',borderRadius:'25px' }}>
         <Card.Body>
           <Card.Title>{props.operations.opr}</Card.Title>
           <Card.Text>
@@ -13,7 +20,8 @@ const CardComponent = (props) => {
         </Card.Body>
 
         <Card.Footer>
-          <Button variant="primary">Start Learning</Button>
+          <Button className="bu" variant="primary" onClick={handleClick} >Start Learning</Button>
+
         </Card.Footer>
       </Card>
     
