@@ -27,7 +27,7 @@ const HomeComponent = () => {
         <div>
             <Jumbotron fluid>
                 <Container className='first'>
-                    {/* <h1>What do we offer</h1> */}
+
                     <div style={{ display:'flex',alignItems:'flex-start',marginLeft:'50px'}}>
                         <div style={{ display:'flex',flexDirection:'column' }}>
                             <p style={{ display:'inline-block',width:'80%',marginRight:'10px'}}>
@@ -44,7 +44,7 @@ const HomeComponent = () => {
              <hr></hr>
              <br></br>
              <br></br>
-             {/* <br></br> */}
+
              <div class="container">
                 <CardDeck>
                     {operations.map(operations => 

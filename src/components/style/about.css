@@ -1,0 +1,46 @@
+h1 {
+    text-align: center;
+    padding: 3%;
+    color: rgb(241, 230, 67);
+}
+h2 {
+    text-align: center;
+    color: rgb(241, 230, 67);
+    margin-bottom: 2%;
+
+}
+.container {
+    display: inline;
+    align-items : center
+}
+
+.paras {
+
+    width: 100%;
+    color: green;  
+
+    font-size: 18px;
+    text-align: center;
+    margin-left: 8%;
+ 
+}
+
+.paras p {
+    width: 50%;
+    align-items: center;
+}
+
+.image {
+    position: absolute;
+    left: 60%;
+    top: 40%;    
+}
+
+.benefits {
+    margin-top: 4%;
+    width: 50%;
+    text-align: left;
+    margin-left: 20%;
+    color: green;
+    font-size: 18px;
+}

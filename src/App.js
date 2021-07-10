@@ -4,6 +4,7 @@ import NavbarComponent from './components/NavbarComponent';
 import HomeComponent from './components/HomeComponent';
 import { BrowserRouter as Router } from 'react-router-dom';
 import AboutComponent from './components/AboutComponent';
+import Learning from './components/Learning'
 function App() {
   // const location = useLocation();
   return (
@@ -21,6 +22,11 @@ function App() {
                 <Route path="/about">
                   <AboutComponent />
                 </Route>
+
+                <Route path="/learn">
+                  <Learning/>
+                </Route>
+
             </Switch>
             
       
