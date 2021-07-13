@@ -1,15 +1,15 @@
 import React from 'react'
-import './style/about.css'
+import '../components/style/about.css'
 import Image from '../assets/images/about_img.png'
 
 const AboutComponent = () => {
     return (
         <>     
-            <h1>
+            <h1 className="head">
                About Vedic Maths
             </h1>
 
-            <div className = "container">
+            <div className = "container2">
                 <div className = "paras">
                     <p>
                         Vedic Mathematics is the name given to a supposedly ancient system of
@@ -44,7 +44,7 @@ const AboutComponent = () => {
                 </div>
                 
                 <div className = "benefits">
-                <h2>Benefits</h2>
+                <h2 className="head2">Benefits</h2>
                     <ul>
                         <li>Provides an insight into ancient Indian mathematics</li>
                         <li>Eradicates the fear of Mathematics and instils confidence</li>
@@ -61,3 +61,23 @@ const AboutComponent = () => {
 }
 
 export default AboutComponent
+
+
+
+
+
+// import React from 'react'
+
+// const AboutComponent = () => {
+//     return (
+//         <div>
+            
+//             <h1>
+//                About page
+//             </h1>
+           
+//         </div>
+//     )
+// }
+
+// export default AboutComponent

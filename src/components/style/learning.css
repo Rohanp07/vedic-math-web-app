@@ -1,0 +1,15 @@
+#ytPlayer{
+    padding-left: 50px;
+    /* padding-top: 50px; */
+    float: left;
+
+}
+.infoPara{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 10%;
+}
+.infoDiv{
+    margin-left: 50%;
+}

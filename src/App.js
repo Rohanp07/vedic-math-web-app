@@ -1,10 +1,10 @@
 import './assets/App.css';
 import { Route, Switch, useLocation } from 'react-router-dom';
 import NavbarComponent from './components/NavbarComponent';
-import HomeComponent from './components/HomeComponent';
+import HomeComponent from './pages/HomeComponent';
 import { BrowserRouter as Router } from 'react-router-dom';
-import AboutComponent from './components/AboutComponent';
-import Learning from './components/Learning'
+import AboutComponent from './pages/AboutComponent';
+import Learning from './pages/Learning'
 function App() {
   // const location = useLocation();
   return (
@@ -18,7 +18,7 @@ function App() {
                 </Route>
                 <Route path="/home">
                   <HomeComponent />
-                </Route>
+                </Route> 
                 <Route path="/about">
                   <AboutComponent />
                 </Route>

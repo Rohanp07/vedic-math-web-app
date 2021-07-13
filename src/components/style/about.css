@@ -1,46 +1,45 @@
-h1 {
+.head {
     text-align: center;
     padding: 3%;
     color: rgb(241, 230, 67);
-}
-h2 {
+  }
+  .head2 {
     text-align: center;
     color: rgb(241, 230, 67);
     margin-bottom: 2%;
-
-}
-.container {
+  }
+  .container2 {
     display: inline;
-    align-items : center
-}
-
-.paras {
-
+    align-items: center;
+  }
+  
+  .paras {
     width: 100%;
-    color: green;  
-
+    color: green;
+  
     font-size: 18px;
     text-align: center;
     margin-left: 8%;
- 
-}
-
-.paras p {
+  }
+  
+  .paras p {
     width: 50%;
     align-items: center;
-}
-
-.image {
+  }
+  
+  .image {
     position: absolute;
     left: 60%;
-    top: 40%;    
-}
-
-.benefits {
+    top: 40%;
+  }
+  
+  .benefits {
     margin-top: 4%;
     width: 50%;
     text-align: left;
     margin-left: 20%;
     color: green;
     font-size: 18px;
-}
+  }
+  
+  
