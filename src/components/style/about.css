@@ -4,9 +4,21 @@
     color: rgb(241, 230, 67);
   }
   .head2 {
+    margin-left: 5%;
+    color: rgb(241, 230, 67);
+    margin-bottom: 3%;
+  }
+  .head3 {
     text-align: center;
     color: rgb(241, 230, 67);
-    margin-bottom: 2%;
+    margin-top: 2%;
+    margin-bottom: 5%;
+  }
+  .head4 {
+    text-align: center;
+    color: rgb(241, 230, 67);
+    margin-top: 2%;
+    margin-bottom: 5%;
   }
   .container2 {
     display: inline;
@@ -37,9 +49,41 @@
     margin-top: 4%;
     width: 50%;
     text-align: left;
+    margin-left: 10%;
+    color: green;
+    font-size: 18px;
+  }
+
+  .sutras {
+    margin-top: 4%;
+    width: 60%;
+    text-align: left;
     margin-left: 20%;
     color: green;
     font-size: 18px;
   }
-  
-  
+  .sub-sutras {
+    margin-top: 4%;
+    width: 100%;
+    text-align: left;
+    margin-left: 0%;
+    color: green;
+    font-size: 18px;
+  }
+
+  #table1 tr:nth-child(even) {
+    background-color: #eee;
+  }
+  #table1 tr:nth-child(even) :hover {
+    background-color: rgb(197, 197, 197);
+  }
+  #table1 tr:nth-child(odd) {
+    background-color: rgb(84, 189, 137);
+  }
+  #table1 tr:nth-child(odd) :hover {
+    background-color: rgb(70, 160, 115);
+  }
+  #table1 th {
+    background-color: white;
+  }
+ 
