@@ -1,7 +1,12 @@
 import React from "react";
 import ReactPlayer from "react-player/youtube";
 import "../components/style/learning.css";
+import Button from 'react-bootstrap/Button'
+import { useHistory } from 'react-router-dom';
+
 const Learning = () => {
+  const history = useHistory();
+  const handleClick = () => history.push('/practice');
   return (
     <div>
       <h1 style={{ padding: "2%" }}>LEARN VEDIC MATHS</h1>
@@ -22,6 +27,7 @@ const Learning = () => {
           mollit anim id est laborum.
         </p>
       </div>
+      <Button variant="primary" onClick={handleClick}>Solve Problems</Button>
     </div>
   );
 };

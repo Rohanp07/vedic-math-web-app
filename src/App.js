@@ -5,6 +5,7 @@ import HomeComponent from './pages/HomeComponent';
 import { BrowserRouter as Router } from 'react-router-dom';
 import AboutComponent from './pages/AboutComponent';
 import Learning from './pages/Learning'
+import Practice from './pages/Practice'
 function App() {
   // const location = useLocation();
   return (
@@ -25,6 +26,10 @@ function App() {
 
                 <Route path="/learn">
                   <Learning/>
+                </Route>
+                
+                <Route path="/practice">
+                  <Practice/>
                 </Route>
 
             </Switch>
