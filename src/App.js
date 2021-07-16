@@ -18,7 +18,7 @@ function App() {
                   <HomeComponent />
                 </Route>
                 <Route path="/home">
-                  <HomeComponent />
+                  <HomeComponent/>
                 </Route> 
                 <Route path="/about">
                   <AboutComponent />
