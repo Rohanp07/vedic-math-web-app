@@ -6,24 +6,7 @@ import { useHistory } from 'react-router-dom';
 import { Modal } from "react-bootstrap";
  
 const CardComponent = (props) => {
-  var tr="";
-  const opr={
-      'Addition':['Nikilam-Sutra','Ekadiken'],
-      'Subtraction':['Ty','Hello']
-  }
-  const history = useHistory();
-  const handleClick = () => history.push('/learn');
-  const [showModal, setShow] = useState(false);
-  const handleClose = () => setShow(false);
-  const handleShow = (e) => {
-  
-    // console.log(e.target.id);
-    tr=e.target.id;
-    tr=(opr[tr])[0];
-    setShow(true);
-    // console.log(tr);
-  }
-  return (
+    return (
    
       <Card className="k" style={{ backgroundColor: '#DCE4DD',borderRadius:'25px' }}>
         <Card.Body>
