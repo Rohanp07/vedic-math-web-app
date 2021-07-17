@@ -26,6 +26,17 @@ const NavbarComponent = () => {
             
             <Nav.Link className="ml-3 mr-3"><Icon icon={iconfinderIcon} /> About Vedic </Nav.Link>
           </LinkContainer>
+
+          <LinkContainer to="/login">
+            
+            <Nav.Link className="ml-3 mr-3">Login</Nav.Link>
+          </LinkContainer>
+
+
+          <LinkContainer to="/register">
+            
+            <Nav.Link className="ml-3 mr-3">Register</Nav.Link>
+          </LinkContainer>
           
         </Nav>
       </Navbar.Collapse>

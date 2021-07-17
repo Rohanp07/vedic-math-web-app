@@ -4,8 +4,11 @@ import NavbarComponent from './components/NavbarComponent';
 import HomeComponent from './pages/HomeComponent';
 import { BrowserRouter as Router } from 'react-router-dom';
 import AboutComponent from './pages/AboutComponent';
-import Learning from './pages/Learning'
-import Practice from './pages/Practice'
+import Learning from './pages/Learning';
+import Practice from './pages/Practice';
+import Login from './pages/Login';
+import Register from './pages/Register';
+
 function App() {
   // const location = useLocation();
   return (
@@ -30,6 +33,14 @@ function App() {
                 
                 <Route path="/practice">
                   <Practice/>
+                </Route>
+
+                <Route path="/login">
+                    <Login/>
+                </Route>
+
+                <Route path="/register">
+                    <Register/>
                 </Route>
 
             </Switch>
