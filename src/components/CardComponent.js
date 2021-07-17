@@ -16,10 +16,11 @@ const CardComponent = (props) => {
   const [showModal, setShow] = useState(false);
   const handleClose = () => setShow(false);
   const handleShow = (e) => {
-    setShow(true);
+  
     // console.log(e.target.id);
     tr=e.target.id;
     tr=(opr[tr])[0];
+    setShow(true);
     // console.log(tr);
   }
   return (
