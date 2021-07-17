@@ -6,7 +6,7 @@ import { useHistory } from 'react-router-dom';
 import { Modal } from "react-bootstrap";
  
 const CardComponent = (props) => {
-  var tr="";
+  
   const opr={
       'Addition':['Nikilam-Sutra','Ekadiken'],
       'Subtraction':['Ty','Hello']
@@ -14,13 +14,17 @@ const CardComponent = (props) => {
   const history = useHistory();
   const handleClick = () => history.push('/learn');
   const [showModal, setShow] = useState(false);
+  const [tr,setTr]=useState("null")
   const handleClose = () => setShow(false);
   const handleShow = (e) => {
+
+    console.log((opr[e.target.id])[0])
+    console.log(opr["Addition"][0])
+    var temp=(opr[e.target.id])[0]
+    console.log(temp)
+    setTr(temp);
     setShow(true);
-    // console.log(e.target.id);
-    tr=e.target.id;
-    tr=(opr[tr])[0];
-    // console.log(tr);
+  
   }
   return (
    
@@ -41,17 +45,17 @@ const CardComponent = (props) => {
             </Modal.Header>
             <Modal.Body>
             <Button variant="primary" onClick={handleClick}>
-                 { console.log(tr) }
+                 {tr}
             </Button>
             </Modal.Body>
-            <Modal.Footer>
+            {/* <Modal.Footer>
               <Button variant="secondary" onClick={handleClose}>
                 Close
               </Button>
               <Button variant="primary" onClick={handleClose}>
                 Save Changes
               </Button>
-            </Modal.Footer>
+            </Modal.Footer> */}
           </Modal>
 
         </Card.Footer>
