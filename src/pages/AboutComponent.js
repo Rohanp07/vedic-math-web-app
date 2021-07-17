@@ -3,6 +3,7 @@ import '../components/style/about.css'
 import Image from '../assets/images/about_img.png'
 import { Table } from 'react-bootstrap'
 
+
 const AboutComponent = () => {
     return (
         <>     

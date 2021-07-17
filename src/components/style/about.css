@@ -1,35 +1,47 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates&display=swap');
+
+
 .head {
     text-align: center;
     padding: 3%;
-    color: rgb(241, 230, 67);
+    color : rgb(252, 58, 133) ;
+    /* color : rgb( 105, 91, 252) ; */
+    /* color : rgb(56, 108, 252); */
+    font-family: 'Montserrat Alternate',cursive;
+    font-weight: bold;
   }
   .head2 {
     margin-left: 5%;
-    color: rgb(241, 230, 67);
     margin-bottom: 3%;
+    font-family: 'Montserrat Alternate',cursive;
+    color : rgb(252, 58, 133);
   }
   .head3 {
     text-align: center;
-    color: rgb(241, 230, 67);
     margin-top: 2%;
     margin-bottom: 5%;
+    font-family: 'Montserrat Alternate',cursive;
+    color : rgb(252, 58, 133);
   }
   .head4 {
     text-align: center;
-    color: rgb(241, 230, 67);
     margin-top: 2%;
     margin-bottom: 5%;
+    font-family: 'Montserrat Alternate',cursive;
+    color : rgb(252, 58, 133) ;
   }
   .container2 {
     display: inline;
     align-items: center;
   }
-  
+
   .paras {
-    width: 100%;
+    width: 80%;
     color: green;
+    font-family: 'Josefin Sans', cursive;
   
-    font-size: 18px;
+    font-size: 20px;
     text-align: center;
     margin-left: 8%;
   }
@@ -51,7 +63,8 @@
     text-align: left;
     margin-left: 10%;
     color: green;
-    font-size: 18px;
+    font-size: 20px;
+    font-family: 'Josefin Sans', cursive;
   }
 
   .sutras {
