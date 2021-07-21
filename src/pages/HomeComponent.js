@@ -12,10 +12,9 @@ import '../components/style.css';
 const HomeComponent = () => {
 
     const [operations,setOperation]=useState([
-        {opr:"Addition"},
-        {opr:"Subtraction"},
-        {opr:"Division"},
-        {opr:"Multiplication"}
+        {opr:"Nikhilam Navatashcaramam Dashatah"},
+        {opr:"Ekadiken Purven"},
+        {opr:"Antyayordashkepi"},
     ]);
 
     return (
