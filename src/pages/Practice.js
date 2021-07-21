@@ -6,6 +6,10 @@ import FormControlLabel from "@material-ui/core/FormControlLabel";
 import Button from "@material-ui/core/Button";
 import '../components/style/practice.css'
 import mathImg from '../assets/images/undraw_mathematics_4otb.png'
+// import Timer from '../components/Timer'
+import { CountdownCircleTimer } from "react-countdown-circle-timer";
+import '../components/style/timerClock.css'
+
 
 export default function Practice() {
   const [currentQuestion, setCurrentQuestion] = useState(0);
@@ -13,8 +17,21 @@ export default function Practice() {
   const [score, setScore] = useState(0);
   const [value, setValue] = React.useState("");
   const [flag, setFlag] = useState(0);
+  const [key, setKey] = useState(0);
 
-  function test() {}
+  const renderTime = ({ remainingTime }) => {
+    if (remainingTime === 0) {
+      return <div className="timer">Too late...</div>;
+    }
+  
+    return (
+      <div className="timer">
+        <div className="text">Remaining</div>
+        <div className="value">{remainingTime}</div>
+        <div className="text">seconds</div>
+      </div>
+    );
+  };
 
   const handleRadioChange = (event) => {
     setValue(event.target.value);
@@ -38,7 +55,11 @@ export default function Practice() {
       setShowScore(true);
     }
     setFlag(0);
+    setKey(prevKey => prevKey + 1)
   };
+
+  
+
   return (
     <div className="app">
       {showScore ? (
@@ -77,13 +98,33 @@ export default function Practice() {
             </RadioGroup>
           </div>
           <br></br>
+
+
+
           <Button variant="contained" color="primary" onClick={() => next()}>
             Next
           </Button>
+
+
+        <div className="timer-wrapper">
+          <CountdownCircleTimer
+            key={key}
+            isPlaying
+            duration={3}
+            colors={[["#004777", 0.33], ["#F7B801", 0.33], ["#A30000"]]}
+            onComplete={() => {
+              next()
+              return [true, 1500] // repeat animation in 1.5 seconds
+            }}
+          >
+            {renderTime}
+          </CountdownCircleTimer>
+      </div>
 		</div>
 		  <img src = {mathImg} className="image mathImg"/>   
         </>
       )}
+      
     </div>
   );
 }
