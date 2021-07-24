@@ -8,15 +8,24 @@ import Image from '../assets/images/hj3.jpg';
 import Jumbotron from 'react-bootstrap/Jumbotron';
 import Container from 'react-bootstrap/Container';
 import '../components/style.css';
-
+import information from '../assets/info'
 const HomeComponent = () => {
 
     const [operations,setOperation]=useState([
-        {opr:"Nikhilam Navatashcaramam Dashatah"},
-        {opr:"Ekadiken Purven"},
-        {opr:"Antyayordashkepi"},
+        {
+            opr:"Nikhilam Navatashcaramam Dashatah",
+            page: "/learnNikhilam"
+        },
+        {
+            opr:"Ekadiken Purven",
+            page: "/learnEka"
+        },
+        {
+            opr:"Antyayordashkepi",
+            page: "/learnAntya"
+        },
     ]);
-
+    const Information=information
     return (
         <div>
             <Jumbotron fluid>

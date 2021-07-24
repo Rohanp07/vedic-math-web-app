@@ -11,8 +11,10 @@ const CardComponent = (props) => {
       'Addition':['Nikilam-Sutra','Ekadiken'],
       'Subtraction':['Ty','Hello']
   }
+  const loc =props.operations.page;
+  console.log(loc)
   const history = useHistory();
-  const handleClick = () => history.push('/learn');
+  const handleClick = () => history.push(loc); 
   const [showModal, setShow] = useState(false);
   const [tr,setTr]=useState("null")
   const handleClose = () => setShow(false);
