@@ -46,15 +46,15 @@ const AboutComponent = () => {
                 </div>
                 
                 <div className = "benefits">
-                <h2 className="head2">Benefits</h2>
-                    <ul>
-                        <li>Provides an insight into ancient Indian mathematics</li>
-                        <li>Eradicates the fear of Mathematics and instils confidence</li>
-                        <li>Improves calculation speed and numerical skills</li>
-                        <li>Sharpens the brain</li>
-                        <li>Facilitates a habit of analytical thinking and measured approach towards any problem</li>
-                        <li>Enhances holistic development of human brain through multi-dimensional thinking approach.</li>
-                    </ul>
+                    <h2 className="head2">Benefits</h2>
+                        <ul>
+                            <li>Provides an insight into ancient Indian mathematics</li>
+                            <li>Eradicates the fear of Mathematics and instils confidence</li>
+                            <li>Improves calculation speed and numerical skills</li>
+                            <li>Sharpens the brain</li>
+                            <li>Facilitates a habit of analytical thinking and measured approach towards any problem</li>
+                            <li>Enhances holistic development of human brain through multi-dimensional thinking approach.</li>
+                        </ul>
                 </div>
                 <div className = "sutras">
                     <h2 className = "head3">Sutras</h2>

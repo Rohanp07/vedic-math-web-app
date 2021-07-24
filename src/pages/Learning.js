@@ -16,7 +16,7 @@ const Learning = (props) => {
         id="ytPlayer"
       />
       <div className="infoDiv">
-        <h3>Subtaction using Nikhilam Sutra</h3>
+        <h3>{props.info.name}</h3>
         <p className="infoPara">
           {props.info.textInfo}
         </p>

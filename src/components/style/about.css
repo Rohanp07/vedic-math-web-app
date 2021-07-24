@@ -1,102 +1,101 @@
-@import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates&display=swap');
-
+@import url("https://fonts.googleapis.com/css?family=Josefin+Sans");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates&display=swap");
 
 .head {
-    text-align: center;
-    padding: 3%;
-    color : rgb(252, 58, 133) ;
-    /* color : rgb( 105, 91, 252) ; */
-    /* color : rgb(56, 108, 252); */
-    font-family: 'Montserrat Alternate',cursive;
-    font-weight: bold;
-  }
-  .head2 {
-    margin-left: 5%;
-    margin-bottom: 3%;
-    font-family: 'Montserrat Alternate',cursive;
-    color : rgb(252, 58, 133);
-  }
-  .head3 {
-    text-align: center;
-    margin-top: 2%;
-    margin-bottom: 5%;
-    font-family: 'Montserrat Alternate',cursive;
-    color : rgb(252, 58, 133);
-  }
-  .head4 {
-    text-align: center;
-    margin-top: 2%;
-    margin-bottom: 5%;
-    font-family: 'Montserrat Alternate',cursive;
-    color : rgb(252, 58, 133) ;
-  }
-  .container2 {
-    display: inline;
-    align-items: center;
-  }
+  text-align: center;
+  padding: 3%;
+  color: rgb(252, 58, 133);
+  /* color : rgb( 105, 91, 252) ; */
+  /* color : rgb(56, 108, 252); */
+  font-family: "Montserrat Alternate", cursive;
+  font-weight: bold;
+}
 
-  .paras {
-    width: 80%;
-    color: green;
-    font-family: 'Josefin Sans', cursive;
-  
-    font-size: 20px;
-    text-align: center;
-    margin-left: 8%;
-  }
-  
-  .paras p {
-    width: 50%;
-    align-items: center;
-  }
-  
-  .image {
-    position: absolute;
-    left: 60%;
-    top: 40%;
-  }
-  
-  .benefits {
-    margin-top: 4%;
-    width: 50%;
-    text-align: left;
-    margin-left: 10%;
-    color: green;
-    font-size: 20px;
-    font-family: 'Josefin Sans', cursive;
-  }
+.head2 {
+  margin-left: 5%;
+  margin-bottom: 3%;
+  font-family: "Montserrat Alternate", cursive;
+  color: rgb(252, 58, 133);
+}
+.head3 {
+  text-align: center;
+  margin-top: 2%;
+  margin-bottom: 5%;
+  font-family: "Montserrat Alternate", cursive;
+  color: rgb(252, 58, 133);
+}
+.head4 {
+  text-align: center;
+  margin-top: 2%;
+  margin-bottom: 5%;
+  font-family: "Montserrat Alternate", cursive;
+  color: rgb(252, 58, 133);
+}
+.container2 {
+  display: inline;
+  align-items: center;
+}
 
-  .sutras {
-    margin-top: 4%;
-    width: 60%;
-    text-align: left;
-    margin-left: 20%;
-    color: green;
-    font-size: 18px;
-  }
-  .sub-sutras {
-    margin-top: 4%;
-    width: 100%;
-    text-align: left;
-    margin-left: 0%;
-    color: green;
-    font-size: 18px;
-  }
+.paras {
+  width: 80%;
+  color: green;
+  font-family: "Josefin Sans", cursive;
 
-  #table1 tr:nth-child(even) {
-    background-color: #eee;
-  }
-  #table1 tr:nth-child(even) :hover {
-    background-color: rgb(197, 197, 197);
-  }
-  #table1 tr:nth-child(odd) {
-    background-color: rgb(84, 189, 137);
-  }
-  #table1 tr:nth-child(odd) :hover {
-    background-color: rgb(70, 160, 115);
-  }
-  #table1 th {
-    background-color: white;
-  }
- 
+  font-size: 20px;
+  text-align: center;
+  margin-left: 8%;
+}
+
+.paras p {
+  width: 50%;
+  align-items: center;
+}
+
+.image {
+  position: absolute;
+  left: 60%;
+  top: 40%;
+}
+
+.benefits {
+  margin-top: 4%;
+  width: 50%;
+  text-align: left;
+  margin-left: 10%;
+  color: green;
+  font-size: 20px;
+  font-family: "Josefin Sans", cursive;
+}
+
+.sutras {
+  margin-top: 4%;
+  width: 60%;
+  text-align: left;
+  margin-left: 20%;
+  color: green;
+  font-size: 18px;
+}
+.sub-sutras {
+  margin-top: 4%;
+  width: 100%;
+  text-align: left;
+  margin-left: 0%;
+  color: green;
+  font-size: 18px;
+}
+
+#table1 tr:nth-child(even) {
+  background-color: #eee;
+}
+#table1 tr:nth-child(even) :hover {
+  background-color: rgb(197, 197, 197);
+}
+#table1 tr:nth-child(odd) {
+  background-color: rgb(84, 189, 137);
+}
+#table1 tr:nth-child(odd) :hover {
+  background-color: rgb(70, 160, 115);
+}
+#table1 th {
+  background-color: white;
+}
