@@ -8,15 +8,19 @@ import Learning from './pages/Learning';
 import Practice from './pages/Practice';
 import Login from './pages/Login';
 import Register from './pages/Register';
+import info from './assets/info';
 
 function App() {
   // const location = useLocation();
+  // const information=info;
+  // console.log(info[0].videoLink)
   return (
     <div className="App">
     <Router>
     <div className="content">
     <NavbarComponent/>
             <Switch >
+              
                 <Route exact path="/">
                   <HomeComponent />
                 </Route>
@@ -27,10 +31,17 @@ function App() {
                   <AboutComponent />
                 </Route>
 
-                <Route path="/learn">
-                  <Learning/>
+                <Route path="/learnNikhilam">
+                  <Learning info={info[0]}/>
                 </Route>
                 
+                <Route path="/learnEka">
+                  <Learning info={info[1]}/>
+                </Route>
+
+                <Route path="/learnAntya">
+                  <Learning info={info[2]}/>
+                </Route>
                 <Route path="/practice">
                   <Practice/>
                 </Route>

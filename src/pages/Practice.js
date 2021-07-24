@@ -40,6 +40,8 @@ export default function Practice() {
       // console.log("test")
     } else setFlag(0);
   };
+
+  
   const next = () => {
     if (flag === 1) {
       setScore(score + 1);
