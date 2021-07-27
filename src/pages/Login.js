@@ -1,6 +1,6 @@
 import React from 'react'
 import '../components/style/login.css'
-
+// import fire from '../components/firebase'
 
 const Login=()=>{
     return(
@@ -25,9 +25,9 @@ const Login=()=>{
                             <button type="submit" className="btn btn-primary btn-login" name="login">Log In</button>
                         </div>
                         <div>
-                            <a href="register.php">
+                            
                             <button type="button" className="btn btn-primary btn-login">Register</button>
-                            </a>
+                            
                         </div>
                     </div> 
                 </div> 

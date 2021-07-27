@@ -3,17 +3,15 @@ import firebase from "firebase";
 
 const firebaseApp =firebase.initializeApp({
 
-
-
-    apiKey: "AIzaSyC44cdy7MWHeC1TqBdjVQGj4EkkC1f1tdo",
-    authDomain: "todo-app-rohan.firebaseapp.com",
-    projectId: "todo-app-rohan",
-    storageBucket: "todo-app-rohan.appspot.com",
-    messagingSenderId: "51206303102",
-    appId: "1:51206303102:web:2e1a5346be79b46e33572f",
-    measurementId: "G-CXZQZYE041"
+    apiKey: "AIzaSyC3xi4T7_1qjtHkRgg3kns6ILQP2zrpyVU",
+    authDomain: "vedic-math-web-app.firebaseapp.com",
+    projectId: "vedic-math-web-app",
+    storageBucket: "vedic-math-web-app.appspot.com",
+    messagingSenderId: "1001245530395",
+    appId: "1:1001245530395:web:251347b39ef7e8fad75bbe",
+    measurementId: "G-K8SEYCWG70"
 });
 
 
-  const db = firebaseApp.firestore();
-  export default db;
+  const fire = firebaseApp.firestore();
+  export default fire;
