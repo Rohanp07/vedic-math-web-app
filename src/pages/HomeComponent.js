@@ -25,14 +25,17 @@ const HomeComponent = () => {
     {
       opr: "Nikhilam Navatashcaramam Dashatah",
       page: "/learnNikhilam",
+      pracP:"/practiceN"
     },
     {
       opr: "Ekadiken Purven",
       page: "/learnEka",
+      pracP:"/practiceE"
     },
     {
       opr: "Antyayordashkepi",
       page: "/learnAntya",
+      pracP:"/practiceA"
     },
   ]);
   const Information = information;

@@ -6,11 +6,7 @@ import { useHistory } from 'react-router-dom';
 import { Modal } from "react-bootstrap";
  
 const CardComponent = (props) => {
-  
-  const opr={
-      'Addition':['Nikilam-Sutra','Ekadiken'],
-      'Subtraction':['Ty','Hello']
-  }
+ 
   const loc =props.operations.page;
   console.log(loc)
   const history = useHistory();

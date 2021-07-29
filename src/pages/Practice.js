@@ -1,5 +1,6 @@
 import React, { useState, setState } from "react";
-import questions from "../assets/questions";
+// import questions from "../assets/questions";
+// import q3 from "../assets/q3";
 import Radio from "@material-ui/core/Radio";
 import RadioGroup from "@material-ui/core/RadioGroup";
 import FormControlLabel from "@material-ui/core/FormControlLabel";
@@ -11,7 +12,8 @@ import { CountdownCircleTimer } from "react-countdown-circle-timer";
 import '../components/style/timerClock.css'
 
 
-export default function Practice() {
+export default function Practice(props) {
+  const questions=props.questions
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [showScore, setShowScore] = useState(false);
   const [score, setScore] = useState(0);

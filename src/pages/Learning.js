@@ -6,7 +6,9 @@ import { useHistory } from 'react-router-dom';
 
 const Learning = (props) => {
   const history = useHistory();
-  const handleClick = () => history.push('/practice');
+  const loc = props.info.pracP
+  // console.log(loc)
+  const handleClick = () => history.push(loc)
   return (
     <div>
       <h1 style={{ padding: "2%" }}>LEARN VEDIC MATHS</h1>

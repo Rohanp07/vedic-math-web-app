@@ -9,6 +9,11 @@ import Practice from './pages/Practice';
 import Login from './pages/Login';
 import Register from './pages/Register';
 import info from './assets/info';
+import q1 from './assets/q1';
+import q2 from './assets/q2';
+import q3 from './assets/q3';
+
+
 
 function App() {
   // const location = useLocation();
@@ -42,8 +47,16 @@ function App() {
                 <Route path="/learnAntya">
                   <Learning info={info[2]}/>
                 </Route>
-                <Route path="/practice">
-                  <Practice/>
+                <Route path="/practiceN">
+                  <Practice questions={q1}/>
+                </Route>
+
+                <Route path="/practiceE">
+                  <Practice questions={q2}/>
+                </Route>
+
+                <Route path="/practiceA">
+                  <Practice questions={q3}/>
                 </Route>
 
                 <Route path="/login">

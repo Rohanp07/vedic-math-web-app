@@ -1,4 +1,4 @@
-var questions =
+var q1 =
 [
    
     {
@@ -49,4 +49,4 @@ var questions =
 ]
 
 
-export default questions
+export default q1
