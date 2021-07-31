@@ -10,7 +10,7 @@ import mathImg from '../assets/images/undraw_mathematics_4otb.png'
 // import Timer from '../components/Timer'
 import { CountdownCircleTimer } from "react-countdown-circle-timer";
 import '../components/style/timerClock.css'
-
+import { useHistory } from 'react-router-dom';
 
 export default function Practice(props) {
   const questions=props.questions
@@ -20,7 +20,7 @@ export default function Practice(props) {
   const [value, setValue] = React.useState("");
   const [flag, setFlag] = useState(0);
   const [key, setKey] = useState(0);
-
+  const history = useHistory();
   const renderTime = ({ remainingTime }) => {
     if (remainingTime === 0) {
       return <div className="timer">Too late...</div>;
@@ -61,16 +61,29 @@ export default function Practice(props) {
     setFlag(0);
     setKey(prevKey => prevKey + 1)
   };
-
+  const handleBack=()=> history.push('/home'); 
   
 
   return (
+
     <div className="app">
       {showScore ? (
+        <>
+        <div>
+        <div></div>
         <div className="score-section">
-          You scored {score} out of {questions.length}
-		  <img src = {mathImg} className="image mathImg"/>   
-        </div>
+          
+        <h1 className="finalScore">
+          You scored {score} out of {questions.length} !!!
+          </h1>
+         
+      </div> 
+      <img src = {mathImg} className="image mathImg"/>   
+      <Button variant="contained" color="primary" onClick={handleBack}>Back !</Button> 
+      </div>
+       
+    
+        </>
       ) : (
         <>
 		  <div>
