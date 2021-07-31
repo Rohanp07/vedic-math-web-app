@@ -5,7 +5,7 @@ const Sutras = () => {
     return (
         <div>
                             <div className = "sutras">
-                    <h2 className = "head">SUTRAS</h2>
+                    <h2 className = "head sHead">SUTRAS</h2>
                     <Table id="table1" bordered responsive>
                         <thead>
                             <tr>
@@ -116,7 +116,7 @@ const Sutras = () => {
                     </Table>
 
                     <div className = "sub-sutras">
-                        <h2 className = "head">SUB-SUTRAS</h2>
+                        <h2 className = "head sHead">SUB-SUTRAS</h2>
                         <Table id = "table1" bordered responsive>
                             <thead>
                                 <tr>
