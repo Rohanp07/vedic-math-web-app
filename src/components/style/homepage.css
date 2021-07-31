@@ -9,13 +9,25 @@
     transition: 0.3s ease-in;
     transform: scale(1.1);
   }
+  .jumbotron {
+    background-color: aquamarine;
+  }
   
   .bu:hover {
     background-color: black;
     transform: scale(1.1);
   }
-  
-  .h {
+  @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+  .JumboHeading {
     font-size: 50px;
+    font-family: 'Anton', sans-serif; 
+    color: darkcyan
+  }
+  @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap');
+  .l{
+    padding-top: 2%;
+    font-size: 20px;
+    font-family: 'Ubuntu', sans-serif;
+    color: darkcyan
   }
   

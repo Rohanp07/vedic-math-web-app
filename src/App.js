@@ -12,13 +12,12 @@ import info from './assets/info';
 import q1 from './assets/q1';
 import q2 from './assets/q2';
 import q3 from './assets/q3';
+import Sutras from './pages/Sutras';
+import Particles from "react-tsparticles";
+import { Component } from 'react';
+class App extends Component {
 
-
-
-function App() {
-  // const location = useLocation();
-  // const information=info;
-  // console.log(info[0].videoLink)
+  render(){
   return (
     <div className="App">
     <Router>
@@ -67,13 +66,17 @@ function App() {
                     <Register/>
                 </Route>
 
+                <Route path="/sutras">
+                    <Sutras/>
+                </Route>
             </Switch>
             
       
       </div>
      </Router>
+
     </div>
   );
-}
+}}
 
 export default App;

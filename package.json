@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "@firebase/auth": "^0.16.8",
+    "@iconify-icons/ph": "^1.1.3",
     "@iconify-icons/simple-icons": "^1.1.33",
     "@material-ui/core": "^4.12.2",
     "@material-ui/icons": "^4.11.2",
@@ -12,15 +13,19 @@
     "@testing-library/user-event": "^12.1.10",
     "bootstrap": "^4.6.0",
     "firebase": "^8.8.0",
+    "install": "^0.13.0",
+    "npm": "^7.20.3",
     "react": "^17.0.2",
     "react-bootstrap": "^1.6.1",
     "react-countdown-circle-timer": "^2.5.3",
     "react-dom": "^17.0.2",
     "react-firebaseui": "^5.0.2",
+    "react-particles-js": "^3.5.3",
     "react-player": "^2.9.0",
     "react-router-bootstrap": "^0.25.0",
     "react-router-dom": "^5.2.0",
     "react-scripts": "^4.0.3",
+    "react-tsparticles": "^1.33.1",
     "react-typewriter-effect": "^1.0.2",
     "rsuite": "^4.10.2",
     "typewriter-effect": "^2.18.0",
@@ -52,6 +57,6 @@
   },
   "devDependencies": {
     "@iconify-icons/fa-solid": "^1.1.1",
-    "@iconify/react": "^3.0.0-beta.1"
+    "@iconify/react": "^1.1.4"
   }
 }

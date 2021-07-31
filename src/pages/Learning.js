@@ -11,7 +11,7 @@ const Learning = (props) => {
   const handleClick = () => history.push(loc)
   return (
     <div>
-      <h1 style={{ padding: "2%" }}>LEARN VEDIC MATHS</h1>
+      <h1 className="head" style={{ padding: "2%" }}>LEARN VEDIC MATHS</h1>
       <ReactPlayer
         url={props.info.videoLink}
         controls="true"

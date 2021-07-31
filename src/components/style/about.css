@@ -99,3 +99,13 @@
 #table1 th {
   background-color: white;
 }
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+.head{
+  font-family: 'Abril Fatface', cursive;
+  color: #049c7a  
+}
+.benefits{
+  background: aliceblue;
+  border-radius: 5%;
+
+}

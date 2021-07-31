@@ -6,7 +6,7 @@ import RadioGroup from "@material-ui/core/RadioGroup";
 import FormControlLabel from "@material-ui/core/FormControlLabel";
 import Button from "@material-ui/core/Button";
 import '../components/style/practice.css'
-import mathImg from '../assets/images/undraw_mathematics_4otb.png'
+import mathImg from '../assets/images/Question.svg'
 // import Timer from '../components/Timer'
 import { CountdownCircleTimer } from "react-countdown-circle-timer";
 import '../components/style/timerClock.css'

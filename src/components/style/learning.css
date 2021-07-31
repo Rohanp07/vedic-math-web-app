@@ -13,3 +13,7 @@
 .infoDiv{
     margin-left: 50%;
 }
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&display=swap');
+.head{
+    font-family: 'Libre Baskerville', serif;
+}

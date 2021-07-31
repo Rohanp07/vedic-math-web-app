@@ -18,7 +18,7 @@ const CardComponent = (props) => {
    
       <Card className="k" style={{ backgroundColor: '#DCE4DD',borderRadius:'25px' }}>
         <Card.Body>
-          <Card.Title>{props.operations.opr}</Card.Title>
+          <Card.Title class="cardTitle">{props.operations.opr}</Card.Title>
           <Card.Text>
               Here you can learn about <strong>{props.operations.opr}</strong> technique which would allow you to do calculations at a faster rate
           </Card.Text>

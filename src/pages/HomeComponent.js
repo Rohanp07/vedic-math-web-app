@@ -11,6 +11,10 @@ import "../components/style.css";
 import information from "../assets/info";
 import firebase from "firebase";
 import fire from "../components/firebase";
+import "../components/style/homepage.css"
+import JumboImg from "../assets/images/jumbotronImg.svg"
+import Particles from "react-tsparticles";
+
 
 const HomeComponent = () => {
 
@@ -41,6 +45,8 @@ const HomeComponent = () => {
   const Information = information;
   return (
     <div>
+
+    
       <Jumbotron fluid>
         <Container className="first">
           <div
@@ -58,7 +64,7 @@ const HomeComponent = () => {
                   marginRight: "10px",
                 }}
               >
-                <h1 className="h">What do we offer?</h1>
+                <h1 className="JumboHeading">What do we offer?</h1>
                 <p className="l">
                   "We offer multiple courses regarding Vedic maths which would
                   not only strengthen your concepts but our interactive practise
@@ -68,15 +74,15 @@ const HomeComponent = () => {
               </p>
             </div>
             <img
-              src={Image}
-              style={{ width: "50%", height: "50%", float: "right" }}
+              src={JumboImg}
+              style={{ width: "20%", height: "20%", float: "right" }}
             ></img>
           </div>
         </Container>
       </Jumbotron>
-      <hr></hr>
+      {/* <hr></hr>
       <br></br>
-      <br></br>
+      <br></br> */}
 
       <div class="container">
         <CardDeck>
@@ -87,7 +93,7 @@ const HomeComponent = () => {
       </div>
       <br></br>
       <br></br>
-   
+    
     </div>
   );
 };
