@@ -29,17 +29,23 @@ const HomeComponent = () => {
     {
       opr: "Nikhilam Navatashcaramam Dashatah",
       page: "/learnNikhilam",
-      pracP:"/practiceN"
+      pracP:"/practiceN",
+      content:"Nikhilam Sutra stipulates subtraction of a number from the nearest power of 100 ie 10,100,1000,",
+      ht:<strong>Wanna learn with us? Lets Go!!!!</strong>
     },
     {
       opr: "Ekadiken Purven",
       page: "/learnEka",
-      pracP:"/practiceE"
+      pracP:"/practiceE",
+      content:"Ekadhikena Purvena (One More than the Previous) is a sutra useful in finding squares of numbers.SO get ready to find squares blazing fast and flaunt before your Friends",
+      ht:<strong>Shhhh!!! it's a secret"</strong>
     },
     {
       opr: "Antyayordashkepi",
       page: "/learnAntya",
-      pracP:"/practiceA"
+      pracP:"/practiceA",
+      content:"This sutra is helpful in multiplying numbers whose last digits add up to 10. Wanna know the tricks of HUman Computer.",
+      ht:<strong>Know the secret recipes.</strong>
     },
   ]);
   const Information = information;
@@ -49,7 +55,7 @@ const HomeComponent = () => {
         params={{
           particles: {
             number: {
-              value: 500,
+              value: 1000,
               density: {
                 enable: true,
                 value_area: 2000,

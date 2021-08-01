@@ -20,7 +20,7 @@ const CardComponent = (props) => {
         <Card.Body>
           <Card.Title class="cardTitle">{props.operations.opr}</Card.Title>
           <Card.Text>
-              Here you can learn about <strong>{props.operations.opr}</strong> technique which would allow you to do calculations at a faster rate
+              {props.operations.content}{props.operations.ht}
           </Card.Text>
         </Card.Body>
 
