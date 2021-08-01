@@ -1,6 +1,5 @@
 var q2 =
 [
-   
     {
     questionText: 'Conditions for Ekadhiken purven?',
     answerOptions: [
@@ -46,5 +45,54 @@ var q2 =
             { answerText: "162", isCorrect: 'c' },
         ],
         },
+        {
+        questionText: 'What will be the value of 23*27?',
+        answerOptions: [
+            { answerText: '621', isCorrect: 'true' },
+            { answerText: '671', isCorrect: 'a' },
+            { answerText: "216", isCorrect: 'b' },
+            { answerText: "162", isCorrect: 'c' },
+        ],
+        },
+        {
+        questionText: 'What will be the value of 23*27?',
+        answerOptions: [
+            
+            { answerText: '671', isCorrect: 'a' },
+            { answerText: "216", isCorrect: 'b' },
+            { answerText: '621', isCorrect: 'true' },
+            { answerText: "162", isCorrect: 'c' },
+        ],
+        },
+        {
+        questionText: 'How we get the LHS digits of answer using Ekadiken purven?',
+        answerOptions: [
+            { answerText: 'Add 1 to LHS digit,then multiply this by the same.', isCorrect: 'true' },
+            { answerText: 'Subtract 1 to LHS digit,then multiply this by the same.', isCorrect: 'a' },
+            { answerText: "Add 2 to LHS digit,then multiply this by the same. ", isCorrect: 'b' },
+            { answerText: "None of the above", isCorrect: 'c' },
+        ],
+        },
+        {
+            questionText: 'What will be the value of 72*78?',
+            answerOptions: [
+               
+                { answerText: '5432', isCorrect: 'a' },
+                { answerText: "5322", isCorrect: 'b' },
+                { answerText: '5616', isCorrect: 'true' },
+                { answerText: "2349", isCorrect: 'c' },
+            ],
+            },
+            {
+                questionText: 'What will be RHS value of 34*36?',
+                answerOptions: [
+                    
+                    { answerText: '26', isCorrect: 'a' },
+                    { answerText: '24', isCorrect: 'true' },
+                    { answerText: "22", isCorrect: 'b' },
+                    { answerText: "64", isCorrect: 'c' },
+                ],
+                },
+
 ]
-export default q2
+export default q2;

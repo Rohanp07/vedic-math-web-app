@@ -38,15 +38,72 @@ var q1 =
     ],
     },
     {
-        questionText: 'What will be the value of 1000-565?',
+        questionText: 'What will be the value of 1000-569?',
         answerOptions: [
-            { answerText: '435', isCorrect: 'true' },
+            { answerText: '431', isCorrect: 'true' },
             { answerText: '415', isCorrect: 'a' },
             { answerText: "400", isCorrect: 'b' },
             { answerText: "425", isCorrect: 'c' },
         ],
         },
+        {
+            questionText: 'Using nikhilam sutram what is first digit of 10000-565?',
+            answerOptions: [
+                { answerText: '9', isCorrect: 'true' },
+                { answerText: '8', isCorrect: 'a' },
+                { answerText: "7", isCorrect: 'b' },
+                { answerText: "We can't use nikhilam sutram", isCorrect: 'c' },
+
+            ],
+            },
+            {
+                questionText: 'Can we use nikhilam sutram for 26*99?',
+                answerOptions: [
+
+                    { answerText: 'Yes we can', isCorrect: 'a' },
+                    { answerText: 'No', isCorrect: 'true' },
+                    { answerText: "Yes for RHS digits of number", isCorrect: 'b' },
+                    { answerText: "Don't know", isCorrect: 'c' },
+    
+                ],
+                },
+                {
+                    questionText: 'How do we find LHS of 35*99?',
+                    answerOptions: [
+
+                        { answerText: '36', isCorrect: 'a' },
+                        { answerText: "35", isCorrect: 'b' },
+                        { answerText: '34', isCorrect: 'true' },
+                        { answerText: "We can't", isCorrect: 'c' },
+        
+                    ],
+                    },
+                    {
+                        questionText: 'How to calculate RHS of any number multiplied by 99?',
+                        answerOptions: [
+                            { answerText: 'We can find complement using nikhilam sutram for RHS', isCorrect: 'true' },
+                            { answerText: 'By multiplying LHS of the numbers', isCorrect: 'a' },
+                            { answerText: "By finding complement of LHS", isCorrect: 'b' },
+                            { answerText: 'We can find complement using nikhilam sutram for RHS', isCorrect: 'true' },
+                            { answerText: "Don't Know", isCorrect: 'c' },
+            
+                        ],
+                        },
+                        {
+                            questionText: 'How to calculate LHS of the number like 26*99?What will be LHS here?',
+                            answerOptions: [
+        
+                                { answerText: 'Adding 1 to number,27 ', isCorrect: 'a' },
+                                { answerText: 'Subtract 1 from number,25', isCorrect: 'true' },
+                                { answerText: "Multiplying 2 to number,52", isCorrect: 'b' },
+                                { answerText: "None of the above", isCorrect: 'c' },
+                
+                            ],
+                            },
+
+
+
 ]
 
 
-export default q1
+export default q1;
