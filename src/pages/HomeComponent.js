@@ -97,7 +97,7 @@ const HomeComponent = () => {
 
       <div class="container learning" >
         
-      <h1 className="JumboHeading" style={{paddingTop:'3%' , paddingBottom:'3%'}}>Start Learning !! 📚</h1>
+      <h1 className="JumboHeading " style={{color:"azure",paddingTop:'3%' , paddingBottom:'3%'}}>Start Learning !! 📚</h1>
         <CardDeck>
           {operations.map((operations) => (
             <CardComponent operations={operations} />
