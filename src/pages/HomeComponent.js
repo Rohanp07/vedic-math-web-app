@@ -13,8 +13,8 @@ import firebase from "firebase";
 import fire from "../components/firebase";
 import "../components/style/homepage.css"
 import JumboImg from "../assets/images/jumbotronImg.svg"
-import Particles from "react-tsparticles";
-
+// import Particles from "react-tsparticles";
+import Particles from 'react-particles-js';
 
 const HomeComponent = () => {
 
@@ -45,8 +45,21 @@ const HomeComponent = () => {
   const Information = information;
   return (
     <div>
-
+        <Particles
+        params={{
+          particles: {
+            number: {
+              value: 500,
+              density: {
+                enable: true,
+                value_area: 2000,
+              }
+            },
+          },
+        }}
     
+      /> 
+    <div className="homePage">
       <Jumbotron fluid>
         <Container className="first">
           <div
@@ -69,7 +82,7 @@ const HomeComponent = () => {
                   "We offer multiple courses regarding Vedic maths which would
                   not only strengthen your concepts but our interactive practise
                   sessions would make sure that you are clear with the taught
-                  concepts"
+                  concepts."
                 </p>
               </p>
             </div>
@@ -80,11 +93,11 @@ const HomeComponent = () => {
           </div>
         </Container>
       </Jumbotron>
-      {/* <hr></hr>
-      <br></br>
-      <br></br> */}
+                
 
-      <div class="container">
+      <div class="container learning" >
+        
+      <h1 className="JumboHeading" style={{paddingTop:'3%' , paddingBottom:'3%'}}>Start Learning !! 📚</h1>
         <CardDeck>
           {operations.map((operations) => (
             <CardComponent operations={operations} />
@@ -93,8 +106,12 @@ const HomeComponent = () => {
       </div>
       <br></br>
       <br></br>
-    
+
+
+      </div>
     </div>
+
+    
   );
 };
 

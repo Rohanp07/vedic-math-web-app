@@ -99,7 +99,7 @@ const onLogout = () =>{
   return (
     <Navbar variant="dark" className="nav-body" expand="lg">
       <LinkContainer to="/home">
-        <Navbar.Brand href="#home" className="appName">VEDIC MATHS📖</Navbar.Brand>
+        <Navbar.Brand href="#home" className="appName">VEDIC MATHS 📜</Navbar.Brand>
       </LinkContainer>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
