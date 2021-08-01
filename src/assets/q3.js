@@ -35,7 +35,7 @@ var q3 =
     questionText: 'What will be the LHS of 35*45?',
     answerOptions: [
         { answerText: '11', isCorrect: 'a' },
-        { answerText: '12', isCorrect: 'true' },
+        { answerText: '15', isCorrect: 'true' },
         { answerText: "14", isCorrect: 'b' },
         { answerText: "None of the above", isCorrect: 'c' },
     ],
@@ -43,12 +43,61 @@ var q3 =
     {
         questionText: 'What will be the value of 35*45?',
         answerOptions: [
-            { answerText: '1475', isCorrect: 'true' },
+            { answerText: '1575', isCorrect: 'true' },
             { answerText: '754', isCorrect: 'a' },
             { answerText: "1485", isCorrect: 'b' },
             { answerText: "1450", isCorrect: 'c' },
         ],
         },
+        {
+            questionText: 'What will be the value of 15*25?',
+            answerOptions: [
+                { answerText: '375', isCorrect: 'true' },
+                { answerText: '754', isCorrect: 'a' },
+                { answerText: "150", isCorrect: 'b' },
+                { answerText: "275", isCorrect: 'c' },
+            ],
+            },
+            {
+                questionText: 'What will be the value of 35*45?',
+                answerOptions: [
+                    { answerText: '1475', isCorrect: 'a' },
+                    { answerText: '754', isCorrect: 'b' },
+                    { answerText: "1485", isCorrect: 'c' },
+                    { answerText: "1575", isCorrect: 'true' },
+                ],
+                },
+                {
+                    questionText: 'What will be the value of 45*55?',
+                    answerOptions: [
+                        { answerText: '2475', isCorrect: 'true' },
+                        { answerText: '754', isCorrect: 'a' },
+                        { answerText: "2485", isCorrect: 'b' },
+                        { answerText: "2450", isCorrect: 'c' },
+                    ],
+                    },
+                    {
+                        questionText: 'What will be LHS value of 65*75?',
+                        answerOptions: [
+                            { answerText: '48', isCorrect: 'true' },
+                            { answerText: '42', isCorrect: 'a' },
+                            { answerText: "41", isCorrect: 'b' },
+                            { answerText: "44", isCorrect: 'c' },
+                        ],
+                        },
+                        {
+                            questionText: 'What will be value of 65*75?',
+                            answerOptions: [
+                                
+                                { answerText: '4567', isCorrect: 'a' },
+                                { answerText: '4875', isCorrect: 'true' },
+                                { answerText: "4852", isCorrect: 'b' },
+                                { answerText: "4525", isCorrect: 'c' },
+                            ],
+                            },
+                            
+
+
 ]
 
 
