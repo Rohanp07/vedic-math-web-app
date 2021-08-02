@@ -1,19 +1,12 @@
 import React from "react";
 import { useState } from "react";
-import Card from "react-bootstrap/Card";
 import CardDeck from "react-bootstrap/CardDeck";
-import Button from "react-bootstrap/Button";
 import CardComponent from "../components/CardComponent";
-import Image from "../assets/images/hj3.jpg";
 import Jumbotron from "react-bootstrap/Jumbotron";
 import Container from "react-bootstrap/Container";
 import "../components/style.css";
-import information from "../assets/info";
-import firebase from "firebase";
-import fire from "../components/firebase";
 import "../components/style/homepage.css"
 import JumboImg from "../assets/images/jumbotronImg.svg"
-// import Particles from "react-tsparticles";
 import Particles from 'react-particles-js';
 
 const HomeComponent = () => {
@@ -42,7 +35,7 @@ const HomeComponent = () => {
       pracP:"/practiceA"
     },
   ]);
-  const Information = information;
+
   return (
     <div>
         <Particles

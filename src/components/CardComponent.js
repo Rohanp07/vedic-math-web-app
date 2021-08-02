@@ -1,9 +1,8 @@
-import React,{ useState }from "react";
+import React from "react";
 import { Card,Button } from "react-bootstrap";
 import './style.css'
-import { LinkContainer } from "react-router-bootstrap";
 import { useHistory } from 'react-router-dom';
-import { Modal } from "react-bootstrap";
+
  
 const CardComponent = (props) => {
  
@@ -11,9 +10,9 @@ const CardComponent = (props) => {
   console.log(loc)
   const history = useHistory();
   const handleClick = () => history.push(loc); 
-  const [showModal, setShow] = useState(false);
-  const [tr,setTr]=useState("null")
-  const handleClose = () => setShow(false);
+  // const [showModal, setShow] = useState(false);
+  // const [tr,setTr]=useState("null")
+  // const handleClose = () => setShow(false);
   return (
    
       <Card className="k" style={{ backgroundColor: '#DCE4DD',borderRadius:'25px' }}>

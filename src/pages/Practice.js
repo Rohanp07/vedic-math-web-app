@@ -1,13 +1,10 @@
-import React, { useState, setState } from "react";
-// import questions from "../assets/questions";
-// import q3 from "../assets/q3";
+import React, { useState} from "react";
 import Radio from "@material-ui/core/Radio";
 import RadioGroup from "@material-ui/core/RadioGroup";
 import FormControlLabel from "@material-ui/core/FormControlLabel";
 import Button from "@material-ui/core/Button";
 import '../components/style/practice.css'
 import mathImg from '../assets/images/Question.svg'
-// import Timer from '../components/Timer'
 import { CountdownCircleTimer } from "react-countdown-circle-timer";
 import '../components/style/timerClock.css'
 import { useHistory } from 'react-router-dom';
@@ -116,12 +113,9 @@ export default function Practice(props) {
           </div>
           <br></br>
 
-
-
           <Button variant="contained" color="primary" onClick={() => next()}>
             Next
           </Button>
-
 
         <div className="timer-wrapper">
           <CountdownCircleTimer

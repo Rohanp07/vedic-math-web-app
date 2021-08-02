@@ -1,8 +1,7 @@
 import React from 'react'
 import '../components/style/about.css'
-import Image from '../assets/images/about_img.png'
 import Image1 from '../assets/images/Reading.svg'
-import { Table } from 'react-bootstrap'
+
 
 
 const AboutComponent = () => {
@@ -71,19 +70,3 @@ export default AboutComponent
 
 
 
-
-// import React from 'react'
-
-// const AboutComponent = () => {
-//     return (
-//         <div>
-            
-//             <h1>
-//                About page
-//             </h1>
-           
-//         </div>
-//     )
-// }
-
-// export default AboutComponent

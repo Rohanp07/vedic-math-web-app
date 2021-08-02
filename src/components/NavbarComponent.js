@@ -1,7 +1,7 @@
-import { Navbar, Nav, Button } from "react-bootstrap";
+import { Navbar, Nav} from "react-bootstrap";
 import { LinkContainer } from "react-router-bootstrap";
 import "./style/Navbar.css";
-import { Icon, InlineIcon } from '@iconify/react';
+import { Icon } from '@iconify/react';
 import homeIcon from '@iconify-icons/fa-solid/home';
 import iconfinderIcon from '@iconify-icons/simple-icons/iconfinder';
 import { Menu,MenuItem } from "@material-ui/core";
@@ -9,7 +9,6 @@ import { IconButton } from "@material-ui/core";
 import React from "react";
 import AccountCircle from '@material-ui/icons/AccountCircle';
 import firebase from "firebase";
-import fire from './firebase'
 import { useState } from "react";
 // import { Icon, InlineIcon } from '@iconify/react';
 import booksIcon from '@iconify-icons/ph/books';
@@ -20,21 +19,14 @@ const NavbarComponent = () => {
   const [anchorEl, setAnchorEl] = React.useState(null);
   const [login,setLogin]=useState(0)
   const open = Boolean(anchorEl);
-  const [me,setMe]=useState(0);
+  // const [me,setMe]=useState(0);
   const handleMenu = (event) => {
     setAnchorEl(event.currentTarget);
-  };
+  }; 
 
   const handleClose = () => {
     setAnchorEl(null);
-    // if(login==0)
-    // {
-    //   OnSubmit()
-    // }
-    // else
-    // {
-    //   onLogout()
-    // }
+  
   };
 
 
@@ -48,12 +40,12 @@ const NavbarComponent = () => {
       .signInWithPopup(provider)
       .then((result) => {
         /** @type {firebase.auth.OAuthCredential} */
-        var credential = result.credential;
+        // var credential = result.credential;
 
         // This gives you a Google Access Token. You can use it to access the Google API.
-        var token = credential.accessToken;
+        // var token = credential.accessToken;
         // The signed-in user info.
-        var user = result.user;
+        // var user = result.user;
         
         // ...
         componentDidMount()
@@ -143,7 +135,7 @@ const onLogout = () =>{
                 open={open}
                 onClose={handleClose}
               >
-                {login==0 ? 
+                {login===0 ? 
                   <MenuItem onClick={OnSubmit}>Sign-in</MenuItem>
                   : 
                   <div>
