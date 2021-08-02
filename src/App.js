@@ -47,6 +47,12 @@ class App extends Component {
               <Route path="/learnAntya">
                 <Learning info={info[2]} />
               </Route>
+
+              <Route path="/learnNikhilamMulti">
+                <Learning info={info[3]} />
+              </Route>
+
+
               <Route path="/practiceN">
                 <Practice questions={q1} />
               </Route>
@@ -58,6 +64,8 @@ class App extends Component {
               <Route path="/practiceA">
                 <Practice questions={q3} />
               </Route>
+
+              
 
               <Route path="/login">
                 <Login />
