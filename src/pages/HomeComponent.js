@@ -51,8 +51,8 @@ const HomeComponent = () => {
       opr: "Nikhilam Navatashcaramam Dashatah(Multiplication-Version)",
       page: "/learnNikhilamMulti",
       pracP:"/practiceNM",
-      content:"Nikhilam Sutra stipulates subtraction of a number from the nearest power of 100 ie 10,100,1000,",
-      ht:<strong>Wanna learn with us? Lets Go!!!!</strong>
+      content:"Nikhilam Sutra can also simulate mulplication faster ",
+      ht:<strong>Know it Now!!!!</strong>
     },
   
   ]);
