@@ -127,7 +127,7 @@ export default function Practice(props) {
           <CountdownCircleTimer
             key={key}
             isPlaying
-            duration={3}
+            duration={10}
             colors={[["#004777", 0.33], ["#F7B801", 0.33], ["#A30000"]]}
             onComplete={() => {
               next()

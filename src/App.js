@@ -9,9 +9,10 @@ import Practice from "./pages/Practice";
 import Login from "./pages/Login";
 import Register from "./pages/Register";
 import info from "./assets/info";
-import q1 from "./assets/q1";
 import q2 from "./assets/q2";
 import q3 from "./assets/q3";
+import q1 from "./assets/q1";
+import q4 from "./assets/q4";
 import Sutras from "./pages/Sutras";
 // import Particles from "react-tsparticles";
 import Particles from "react-particles-js";
@@ -63,6 +64,9 @@ class App extends Component {
 
               <Route path="/practiceA">
                 <Practice questions={q3} />
+              </Route>
+              <Route path="/practiceNM">
+                <Practice questions={q4} />
               </Route>
 
               
