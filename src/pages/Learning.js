@@ -51,7 +51,8 @@ const Learning = (props) => {
           </Carousel.Item>
         </Carousel>
       </div>
-
+      <br></br>
+      <br></br>
       <div>
         <h1 className="head" style={{ padding: "2%" }}>LEARN VEDIC MATHS</h1>
 

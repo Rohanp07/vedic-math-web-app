@@ -34,7 +34,7 @@ var information = [
           </h3>
           &emsp;<h3>Complement of no. 1079</h3>
           <br></br>
-          <h2>Subtraction number from 10,100 ,10000 </h2>
+          <h2>Subtraction number from 10,100,10000 </h2>
           <div style={{ display:"flex",marginLeft:"100px" }}>
             <span>
             1000 – 565 = ??
@@ -75,19 +75,6 @@ var information = [
                   <br></br>
               </p>
             </span>
-            </div>
-            <br></br>
-            <br></br>
-            <h2>Multiplication by No. 99:</h2>
-            <div style={{ marginLeft:"30px" }}>
-            <ul style={{  }}>
-              <li>Forget 99, remember only other no..</li>
-              <li>Divide the answer in two parts : LHS & RHS</li>
-              <li>LHS is obtained by subtracting 1 from the no.</li>
-              <li>RHS is obtained by finding complement of the
-                  no,Means apply Nikhilam sutra, means all from
-                  9 & last from 10.</li>
-            </ul>
             </div>
       </h5>,
     videoLink: "https://www.youtube.com/watch?v=DzRDRFO2BC0",
@@ -238,6 +225,41 @@ var information = [
     videoLink: "https://www.youtube.com/watch?v=5aMJQ6HS_DY",
     questionSet: "3",
     pracP:"/practiceA"
+  },
+  {
+    name:"Nikilam-Sutra(Multiplication-Version)",
+    textInfo:
+      <h5>
+          <ul>
+              <li>This formula is used to find the complement of a number:</li>
+              <li>Meaning of the formula : All from nine, Last from 10…</li>
+          </ul>
+          <h3>
+              4356:&nbsp;&nbsp;&nbsp;9 - 4=5
+              <br></br>
+              &emsp;&emsp;&emsp;&emsp;&emsp; &emsp; &emsp;&nbsp;&nbsp;9 - 3=6 All from 9
+              <br></br>
+              &emsp; &emsp; &nbsp;&nbsp;&nbsp;9 - 5=4
+              <br></br>
+              &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; 10 - 6=4 Last from 10
+          </h3>
+          &emsp;<h3>Complement of no. 1079</h3>
+          <br></br>
+            <h2>Multiplication by No. 99:</h2>
+            <div style={{ marginLeft:"30px" }}>
+            <ul style={{  }}>
+              <li>Forget 99, remember only other no..</li>
+              <li>Divide the answer in two parts : LHS & RHS</li>
+              <li>LHS is obtained by subtracting 1 from the no.</li>
+              <li>RHS is obtained by finding complement of the
+                  no,Means apply Nikhilam sutra, means all from
+                  9 & last from 10.</li>
+            </ul>
+            </div>
+      </h5>,
+    videoLink: "https://www.youtube.com/watch?v=DzRDRFO2BC0",
+    questionSet: "4",
+    pracP:"/practiceNM"
   },
 ];
 export default information;

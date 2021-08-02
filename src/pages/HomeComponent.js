@@ -47,6 +47,14 @@ const HomeComponent = () => {
       content:"This sutra is helpful in multiplying numbers whose last digits add up to 10. Wanna know the tricks of HUman Computer.",
       ht:<strong>Know the secret recipes.</strong>
     },
+    {
+      opr: "Nikhilam Navatashcaramam Dashatah(Multiplication-Version)",
+      page: "/learnNikhilamMulti",
+      pracP:"/practiceNM",
+      content:"Nikhilam Sutra can also simulate mulplication faster ",
+      ht:<strong>Know it Now!!!!</strong>
+    },
+  
   ]);
   const Information = information;
   return (
