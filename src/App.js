@@ -9,9 +9,10 @@ import Practice from "./pages/Practice";
 import Login from "./pages/Login";
 import Register from "./pages/Register";
 import info from "./assets/info";
-import q1 from "./assets/q1";
 import q2 from "./assets/q2";
 import q3 from "./assets/q3";
+import q1 from "./assets/q1";
+import q4 from "./assets/q4";
 import Sutras from "./pages/Sutras";
 import { Component } from "react";
 class App extends Component {
@@ -45,6 +46,12 @@ class App extends Component {
               <Route path="/learnAntya">
                 <Learning info={info[2]} />
               </Route>
+
+              <Route path="/learnNikhilamMulti">
+                <Learning info={info[3]} />
+              </Route>
+
+
               <Route path="/practiceN">
                 <Practice questions={q1} />
               </Route>
@@ -56,6 +63,11 @@ class App extends Component {
               <Route path="/practiceA">
                 <Practice questions={q3} />
               </Route>
+              <Route path="/practiceNM">
+                <Practice questions={q4} />
+              </Route>
+
+              
 
               <Route path="/login">
                 <Login />
