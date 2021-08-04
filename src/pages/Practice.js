@@ -1,16 +1,16 @@
-import React, { useState} from "react";
+import React, { useState } from "react";
 import Radio from "@material-ui/core/Radio";
 import RadioGroup from "@material-ui/core/RadioGroup";
 import FormControlLabel from "@material-ui/core/FormControlLabel";
 import Button from "@material-ui/core/Button";
-import '../components/style/practice.css'
-import mathImg from '../assets/images/Question.svg'
+import "../components/style/practice.css";
+import mathImg from "../assets/images/Question.svg";
 import { CountdownCircleTimer } from "react-countdown-circle-timer";
-import '../components/style/timerClock.css'
-import { useHistory } from 'react-router-dom';
+import "../components/style/timerClock.css";
+import { useHistory } from "react-router-dom";
 
 export default function Practice(props) {
-  const questions=props.questions
+  const questions = props.questions;
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [showScore, setShowScore] = useState(false);
   const [score, setScore] = useState(0);
@@ -22,7 +22,7 @@ export default function Practice(props) {
     if (remainingTime === 0) {
       return <div className="timer">Too late...</div>;
     }
-  
+
     return (
       <div className="timer">
         <div className="text">Remaining</div>
@@ -40,7 +40,6 @@ export default function Practice(props) {
     } else setFlag(0);
   };
 
-  
   const next = () => {
     if (flag === 1) {
       setScore(score + 1);
@@ -56,86 +55,87 @@ export default function Practice(props) {
       setShowScore(true);
     }
     setFlag(0);
-    setKey(prevKey => prevKey + 1)
+    setKey((prevKey) => prevKey + 1);
   };
-  const handleBack=()=> history.push('/home'); 
-  
+  const handleBack = () => history.push("/home");
 
   return (
 
+    <div className='parcticePage'> 
     <div className="app">
       {showScore ? (
         <>
-        <div>
-        <div></div>
-        <div className="score-section">
-          
-        <h1 className="finalScore">
-          You scored {score} out of {questions.length} !!!
-          </h1>
-         
-      </div> 
-      <img src = {mathImg} className="image mathImg"/>   
-      <Button variant="contained" color="primary" onClick={handleBack}>Back !</Button> 
-      </div>
-       
-    
+          <div>
+            <div></div>
+            <div className="score-section">
+              <h1 className="finalScore">
+                You scored {score} out of {questions.length} !!!
+              </h1>
+            </div>
+     
+            <Button variant="contained" color="primary" onClick={handleBack}>
+              Back !
+            </Button>
+          </div>
         </>
       ) : (
         <>
-		  <div>
-          <div className="question-section">
-            <div className="question-count">
-              <span>Question {currentQuestion + 1}</span>/{questions.length}
+          <div>
+            <div className="question-section">
+              <div className="question-count">
+                <span>Question {currentQuestion + 1}</span>/{questions.length}
+              </div>
+
+              <div className="question-text">
+                {questions[currentQuestion].questionText}
+              </div>
             </div>
 
-            <div className="question-text">
-              {questions[currentQuestion].questionText}
+            <div className="answer-section">
+              {/* <Button onClick={() => handleAnswerOptionClick(answerOption.isCorrect)}>{answerOption.answerText}</Button> */}
+              <RadioGroup
+                aria-label="quiz"
+                name="quiz"
+                value={value}
+                onChange={handleRadioChange}
+              >
+                {questions[currentQuestion].answerOptions.map(
+                  (answerOption) => (
+                    <FormControlLabel
+                      value={answerOption.isCorrect}
+                      control={<Radio />}
+                      label={answerOption.answerText}
+                    />
+                  )
+                )}
+              </RadioGroup>
+            </div>
+            <br></br>
+
+            <Button variant="contained" color="primary" onClick={() => next()}>
+              SUBMIT
+            </Button>
+
+            <div className="timer-wrapper">
+              <CountdownCircleTimer
+                key={key}
+                isPlaying
+                duration={20}
+                colors={[["#004777", 0.33], ["#F7B801", 0.33], ["#A30000"]]}
+                onComplete={() => {
+                  next();
+                  return [true, 1500]; // repeat animation in 1.5 seconds
+                }}
+              >
+                {renderTime}
+              </CountdownCircleTimer>
             </div>
           </div>
-
-          <div className="answer-section">
-            {/* <Button onClick={() => handleAnswerOptionClick(answerOption.isCorrect)}>{answerOption.answerText}</Button> */}
-            <RadioGroup
-              aria-label="quiz"
-              name="quiz"
-              value={value}
-              onChange={handleRadioChange}
-            >
-              {questions[currentQuestion].answerOptions.map((answerOption) => (
-                <FormControlLabel
-                  value={answerOption.isCorrect}
-                  control={<Radio />}
-                  label={answerOption.answerText}
-                />
-              ))}
-            </RadioGroup>
-          </div>
-          <br></br>
-
-          <Button variant="contained" color="primary" onClick={() => next()}>
-            Next
-          </Button>
-
-        <div className="timer-wrapper">
-          <CountdownCircleTimer
-            key={key}
-            isPlaying
-            duration={20}
-            colors={[["#004777", 0.33], ["#F7B801", 0.33], ["#A30000"]]}
-            onComplete={() => {
-              next()
-              return [true, 1500] // repeat animation in 1.5 seconds
-            }}
-          >
-            {renderTime}
-          </CountdownCircleTimer>
-      </div>
-		</div>
-		  <img src = {mathImg} className="image mathImg"/>   
+      
         </>
       )}
-      
+    </div>
+        <img src={mathImg} alt="" className='mathImg'/>
     </div>
   );
 }

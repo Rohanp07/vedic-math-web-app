@@ -34,9 +34,15 @@
   .question-count span {
     font-size: 28px;
   }
+
+  .parcticePage{
+    position: relative;
+  }
   .mathImg{
-    width: 450px;
-    top: 150px;
+   width: 40%;
+   position: absolute;
+   top: 10%;
+   right: 5%;
   }
 
 

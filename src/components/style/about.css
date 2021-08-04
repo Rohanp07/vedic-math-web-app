@@ -1,61 +1,54 @@
 @import url("https://fonts.googleapis.com/css?family=Josefin+Sans");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates&display=swap");
 
-.head {
-  text-align: center;
-  padding: 3%;
-  color: rgb(252, 58, 133);
-  /* color : rgb( 105, 91, 252) ; */
-  /* color : rgb(56, 108, 252); */
-  font-family: "Montserrat Alternate", cursive;
-  font-weight: bold;
+.aboutPage{
+  /* height: 1000px; */
+  position: relative;
 }
 
-.head2 {
-  margin-left: 5%;
-  margin-bottom: 3%;
-  font-family: "Montserrat Alternate", cursive;
-  color: rgb(252, 58, 133);
-}
-.head3 {
-  text-align: center;
-  margin-top: 2%;
-  margin-bottom: 5%;
-  font-family: "Montserrat Alternate", cursive;
-  color: rgb(252, 58, 133);
-}
-.head4 {
-  text-align: center;
-  margin-top: 2%;
-  margin-bottom: 5%;
-  font-family: "Montserrat Alternate", cursive;
-  color: rgb(252, 58, 133);
-}
-.container2 {
-  display: inline;
-  align-items: center;
+.aboutAll{
+  
 }
 
-.paras {
-  width: 80%;
-  color: green;
-  font-family: "Josefin Sans", cursive;
+.paras{
 
-  font-size: 20px;
-  text-align: center;
-  margin-left: 8%;
+  font-family: 'Josefin Sans';
 }
 
-.paras p {
-  width: 50%;
-  align-items: center;
-}
-
-.image {
+.aboutVedic{
   position: absolute;
-  left: 60%;
-  top: 40%;
+  top: 50px;
+  background-color:azure;
+  margin-left: 5%;
+  margin-right: 5%;
+  width: 75%;
+  left: 100px;
 }
+
+.aboutContent{
+
+  
+}
+
+.aboutContent-t{
+  width: 70%;
+  margin-top: 2%;
+  margin-left: 2%;
+  text-align: justify;
+ 
+}
+.maharaj{
+  width: 17%;
+  margin-left: 5%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  float: right;
+}
+
+.float-child{
+  float: left;
+}
+
 
 .benefits {
   margin-top: 4%;
@@ -67,6 +60,9 @@
   font-family: "Josefin Sans", cursive;
 }
 
+.benefits h1 {
+  text-align: center;
+}
 .sutras {
   margin-top: 4%;
   width: 60%;
@@ -105,8 +101,13 @@
   color: #049c7a  
 }
 .benefits{
+  padding-top: 2%;
+  padding-bottom: 0%;
   background: aliceblue;
-  border-radius: 5%;
+  border-radius: 5px;
+  position: absolute;
+  top: 300px;
+  left:15%
 
 }
 .sHead{
