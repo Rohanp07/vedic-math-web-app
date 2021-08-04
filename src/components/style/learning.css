@@ -1,19 +1,129 @@
-#ytPlayer{
-    padding-left: 50px;
-    /* padding-top: 50px; */
-    float: left;
+#ytPlayer {
+  padding-left: 50px;
+  /* padding-top: 50px; */
+  float: left;
+}
+.infoPara {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding-right: 10%;
+}
+.infoDiv {
+  align-items: center;
+  align-content: center;
+  text-align: center;
+  display: inline-block;
+  width: 100%;
+  position: relative;
+  margin-left: 5%;
+  margin-top: 5%;
+}
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&display=swap");
+.head {
+  font-family: "Libre Baskerville", serif;
+}
 
+.covering {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: max-content;
+  width: 100vw;
+  text-align: center;
+  align-self: center;
+  align-content: center;
+  /* position: absolute; */
+  align-items: center;
+  /* margin-left: 15%; */
+  /* background-color: red
+  ; */
+  padding-right: 25%;
 }
-.infoPara{
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    padding-right: 10%;
+
+.player {
+  padding-right: 4%;
 }
-.infoDiv{
-    margin-left: 50%;
+
+.one {
+  /* background-color: rgba(0, 0, 0, 0.2); */
+  align-self: center;
+  text-align: center;
+  align-content: center;
+  height: max-content;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5%;
+  margin-left: 15%;
+  transform: translateX(10%);
+  /* background-color: grey; */
+  border: 5px solid black;
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 25px;
+  box-shadow: 10px 5px 10px black;
 }
-@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&display=swap');
-.head{
-    font-family: 'Libre Baskerville', serif;
+
+.carou {
+  /* background-color: red; */
+  height: 70vh;
+}
+
+.first-slide {
+  background-image: url("../../assets/images/glass.jpg");
+  background-position-y: -4cm;
+  width: 100%;
+  height: 70vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.second-slide {
+  background-image: url("../../assets/images/child.jpg");
+  background-position-y: -5cm;
+  background-size: cover;
+  /* background-position: bottom; */
+  width: 100%;
+  height: 70vh;
+  background-repeat: no-repeat;
+}
+.third-slide {
+  background-image: url("../../assets/images/boy.jpg");
+  background-position-y: -5cm;
+  background-size: cover;
+  /* background-position: bottom; */
+  width: 100%;
+  height: 70vh;
+  background-repeat: no-repeat;
+}
+.car {
+  width: 70vw;
+  align-items: center;
+  height: 70vh;
+  justify-content: center;
+  align-self: center;
+  text-align: center;
+  align-content: center;
+  /* margin-top: 1%; */
+}
+
+.overall {
+  display: flex;
+  flex-direction: column;
+
+  /* background-color: red; */
+}
+
+.sub-overall {
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+  width: 71%;
+  align-content: center;
+  justify-content: center;
+  height: max-content;
+  align-items: center;
+  align-self: center;
+  /* border: 1px solid; */
+  box-shadow: 10px 5px 10px black;
 }
