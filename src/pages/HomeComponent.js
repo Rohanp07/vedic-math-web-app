@@ -86,10 +86,10 @@ const HomeComponent = () => {
               >
                 <h1 className="JumboHeading">What do we offer?</h1>
                 <p className="l">
-                  "We offer multiple courses regarding Vedic maths which would
-                  not only strengthen your concepts but our interactive practise
-                  sessions would make sure that you are clear with the taught
-                  concepts."
+                  We try to become a bridge between you and awesome Vedic Math tricks 
+                  in an attempt to preserve the rich gift and heritage by which we are blessed by
+                  our ancestors. It's our honest attempt to make your math-life easier by providing ample
+                  practise questions and supporting videos explaining those concepts in an easy and lucid manner.
                 </p>
               </p>
             </div>
