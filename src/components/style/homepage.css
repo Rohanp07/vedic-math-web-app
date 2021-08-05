@@ -37,9 +37,17 @@
     border-radius: 20px;
     height: 500px;
   }
+
+  .full-homePage{
+    position: relative;
+  }
   .homePage{
     /* background-color: red; */
-    transform:translateY(-700px);
-    height: 000px;
+    /* transform:translateY(-700px); */
+    /* height: 000px; */
     /* background-color: rgba(0,0,0,0.1); */
+    position: absolute;
+    top: 0;
+    left: 10%;
+
   }

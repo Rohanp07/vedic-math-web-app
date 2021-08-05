@@ -51,7 +51,7 @@ const HomeComponent = () => {
   ]);
 
   return (
-    <div>
+    <div className='full-homePage'> 
         <Particles
         params={{
           particles: {
