@@ -77,7 +77,7 @@ var information = [
             </span>
             </div>
       </h5>,
-    videoLink: "https://www.youtube.com/watch?v=DzRDRFO2BC0",
+    videoLink: "https://youtu.be/y0fqfSVkZqc",
     questionSet: "1",
     pracP:"/practiceN"
   },
@@ -146,7 +146,7 @@ var information = [
             </span>
             </div>
       </h5>,
-    videoLink: "https://www.youtube.com/watch?v=6TFOSwZBGAg",
+    videoLink: "https://youtu.be/E1LgsO7JoPE",
     questionSet: "2",
     pracP:"/practiceE"
   },
@@ -222,7 +222,7 @@ var information = [
             </span>
             </div>
       </h5>,
-    videoLink: "https://www.youtube.com/watch?v=5aMJQ6HS_DY",
+    videoLink: "https://youtu.be/WM_RDQ98ocQ",
     questionSet: "3",
     pracP:"/practiceA"
   },
@@ -257,7 +257,7 @@ var information = [
             </ul>
             </div>
       </h5>,
-    videoLink: "https://www.youtube.com/watch?v=DzRDRFO2BC0",
+    videoLink: "https://youtu.be/PEtuGrOME6w",
     questionSet: "4",
     pracP:"/practiceNM"
   },
